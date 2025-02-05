@@ -1,5 +1,7 @@
 "use strict";
 
+let a = 1;
+
 function solveEquation(a, b, c) {
     const discriminant = b ** 2 - 4 * a * c;
     
@@ -19,8 +21,6 @@ function solveEquation(a, b, c) {
 }
 
 console.log(solveEquation(a, b, c));
-
-"use strict";
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
     const monthlyRate = percent / 100 / 12;
