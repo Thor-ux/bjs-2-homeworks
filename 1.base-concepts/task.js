@@ -18,7 +18,7 @@ function solveEquation(a, b, c) {
     return [root1, root2];
 }
 
-console.log(solveEquation(b, c));
+console.log(solveEquation);
 
 "use strict";
 
