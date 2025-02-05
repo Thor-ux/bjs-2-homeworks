@@ -1,6 +1,8 @@
 "use strict";
 
 let a = 1;
+let b = 5;
+let c = 4;
 
 function solveEquation(a, b, c) {
     const discriminant = b ** 2 - 4 * a * c;
