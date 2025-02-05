@@ -10,7 +10,7 @@ let exampleCases = [
 ];
 
 exampleCases.forEach(exampleCases, index); {
-    console.log(`\nExample Case ${index + 1}:`);
+    console.log(`\nexampleCases ${index + 1}:`);
     console.log(`Equation: ${exampleCases.a}x^2 + ${exampleCases.b}x + ${exampleCases.c} = 0`);
     console.log("Result:", solveEquation(exampleCases.a, exampleCases.b, exampleCases.c));
 }
