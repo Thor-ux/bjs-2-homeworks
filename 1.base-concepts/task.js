@@ -19,3 +19,18 @@ function solveEquation(a, b, c) {
 }
 
 console.log(solveEquation(a, b, c));
+
+"use strict";
+
+function calculateTotalMortgage(percent, contribution, amount, countMonths) {
+    const monthlyRate = percent / 100 / 12;
+    const principal = amount - contribution;
+    if (principal <= 0) {
+        return 0;
+    }
+    const monthlyPayment = principal * (monthlyRate + (monthlyRate / ((1 + monthlyRate) ** countMonths - 1)));
+    const totalPaid = (monthlyPayment * countMonths) + contribution;
+    return Number(totalPaid.toFixed(2));
+}
+
+console.log(calculateTotalMortgage(percent, contribution, amount, countMonths));
