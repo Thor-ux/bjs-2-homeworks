@@ -9,11 +9,12 @@ let exampleCases = [
     {a: 0, b: 2, c: 1}   
 ];
 
-exampleCases.forEach((exampleCases, index) => {
+exampleCases.forEach((example ), index); {
     console.log(`\nExample Case ${index + 1}:`);
     console.log(`Equation: ${exampleCase.a}x^2 + ${exampleCase.b}x + ${exampleCase.c} = 0`);
     console.log("Result:", solveEquation(exampleCase.a, exampleCase.b, exampleCase.c));
-});
+}
+console.log (solveEquation ( a, b, c ))
 
 function solveEquation(a, b, c) {
     const discriminant = b ** 2 - 4 * a * c;
