@@ -9,10 +9,10 @@ let exampleCases = [
     {a: 0, b: 2, c: 1}   
 ];
 
-exampleCases.forEach((example ), index); {
+exampleCases.forEach(exampleCases, index); {
     console.log(`\nExample Case ${index + 1}:`);
-    console.log(`Equation: ${exampleCase.a}x^2 + ${exampleCase.b}x + ${exampleCase.c} = 0`);
-    console.log("Result:", solveEquation(exampleCase.a, exampleCase.b, exampleCase.c));
+    console.log(`Equation: ${exampleCases.a}x^2 + ${exampleCases.b}x + ${exampleCases.c} = 0`);
+    console.log("Result:", solveEquation(exampleCases.a, exampleCases.b, exampleCases.c));
 }
 console.log (solveEquation ( a, b, c ))
 
