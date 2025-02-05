@@ -7,6 +7,7 @@ let exampleCases = [
     {a: 1, b: 1, c: 1},   
     {a: 0, b: 2, c: 1}   
 ];
+let index = 0
 
 exampleCases.forEach((example, index) => {
     console.log(`\nexampleCases ${index + 1}: `);
