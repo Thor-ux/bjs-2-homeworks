@@ -33,7 +33,39 @@ function solveEquation(a, b, c) {
     return [root1, root2];
 }
 
-console.log(solveEquation(a, b, c));
+
+// Variables
+let percent, contribution, amount, countMonths;
+
+// example 1
+percent = 10;
+contribution = 0;
+amount = 50000;
+countMonths = 12;
+
+// example 2
+percent = 10;
+contribution = 1000;
+amount = 50000;
+countMonths = 12;
+
+// example 3
+percent = 10;
+contribution = 20000;
+amount = 20000;
+countMonths = 48;
+
+// example 4
+percent = 10;
+contribution = 0;
+amount = 10000;
+countMonths = 36;
+
+// example 5
+percent = 15;
+contribution = 0;
+amount = 10000;
+countMonths = 36;
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
     const monthlyRate = percent / 100 / 12;
