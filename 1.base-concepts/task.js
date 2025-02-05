@@ -1,8 +1,19 @@
 "use strict";
 
-let a = 1 
-let b = 5
-let c = 4
+
+// Examples
+let exampleCases = [
+    {a: 1, b: 5, c: 4},  
+    {a: 1, b: 2, c: 1}, 
+    {a: 1, b: 1, c: 1},  
+    {a: 0, b: 2, c: 1}   
+];
+
+exampleCases.forEach((exampleCases, index) => {
+    console.log(`\nExample Case ${index + 1}:`);
+    console.log(`Equation: ${exampleCase.a}x^2 + ${exampleCase.b}x + ${exampleCase.c} = 0`);
+    console.log("Result:", solveEquation(exampleCase.a, exampleCase.b, exampleCase.c));
+});
 
 function solveEquation(a, b, c) {
     const discriminant = b ** 2 - 4 * a * c;
