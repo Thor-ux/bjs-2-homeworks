@@ -21,6 +21,7 @@ function getArrayParams(...arr) {
 }
 
 function summElementsWorker(...arr) {
+  if (arr.length === 0) return 0;
   return arr.reduce((sum, num) => sum + num, 0);
 }
 
@@ -30,15 +31,14 @@ function differenceMaxMinWorker(...arr) {
 }
 
 function differenceEvenOddWorker(...arr) {
-  return arr.reduce((diff, num) => {
-    return num % 2 === 0 ? diff + num : diff - num;
-  }, 0);
+  if (arr.length === 0) return 0;
+  return arr.reduce((diff, num) => num % 2 === 0 ? diff + num : diff - num, 0);
 }
 
 function averageEvenElementsWorker(...arr) {
   const evenNumbers = arr.filter(num => num % 2 === 0);
   if (evenNumbers.length === 0) return 0;
-  return evenNumbers.reduce((sum, num) => sum + num) / evenNumbers.length;
+  return Math.round(evenNumbers.reduce((sum, num) => sum + num) / evenNumbers.length);
 }
 
 function makeWork(arrOfArr, func) {
@@ -51,15 +51,5 @@ function makeWork(arrOfArr, func) {
     }
   }
 
-  return maxResult;
+  return maxResult === -Infinity ? 0 : maxResult;
 }
-
-//
-module.exports = {
-  getArrayParams,
-  summElementsWorker,
-  differenceMaxMinWorker,
-  differenceEvenOddWorker,
-  averageEvenElementsWorker,
-  makeWork
-};
