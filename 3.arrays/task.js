@@ -1,8 +1,10 @@
 function compareArrays(arr1, arr2) {
+    // Проверяем, равны ли длины массивов
     if (arr1.length !== arr2.length) {
       return false;
     }
     
+    // Используем every для сравнения элементов
     return arr1.every((element, index) => element === arr2[index]);
   }
   
@@ -19,5 +21,5 @@ function compareArrays(arr1, arr2) {
   
     const totalAge = filteredUsers.reduce((sum, user) => sum + user.age, 0);
     return Number((totalAge / filteredUsers.length).toFixed(1));
-  }
+  }    
     
